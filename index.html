@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أمجد صادق | أرشيف المشاريع البرمجية</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap');
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background: #050810;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+
+        .glass {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #60a5fa, #2dd4bf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .card-hover {
+            transition: all 0.4s ease;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            height: 100%;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px);
+            border-color: #3b82f6;
+            box-shadow: 0 10px 30px -15px rgba(59, 130, 246, 0.3);
+        }
+
+        .project-list li {
+            margin-bottom: 8px;
+            font-size: 0.85rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+            padding-bottom: 4px;
+        }
+
+        .project-list a {
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .project-list a:hover {
+            padding-right: 8px;
+            color: white;
+        }
+
+        .badge {
+            font-size: 0.65rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .badge-frontend {
+            background: rgba(45, 212, 191, 0.1);
+            color: #2dd4bf;
+            border: 1px solid rgba(45, 212, 191, 0.2);
+        }
+
+        .badge-fullstack {
+            background: rgba(96, 165, 250, 0.1);
+            color: #60a5fa;
+            border: 1px solid rgba(96, 165, 250, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="fixed w-full z-50 glass">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-extrabold gradient-text tracking-tighter italic underline decoration-blue-500">
+                AMJAD.DEV
+            </div>
+
+            <div class="hidden md:flex gap-8 text-sm font-bold">
+                <a href="#home" class="hover:text-blue-400 transition">الرئيسية</a>
+                <a href="#projects" class="hover:text-blue-400 transition">المشاريع</a>
+                <a href="#tech" class="hover:text-blue-400 transition">التقنيات</a>
+                <a href="#work" class="hover:text-blue-400 transition">العمل</a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section id="home"
+        class="pt-32 pb-16 px-6 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-blue-900/10 via-transparent to-transparent">
+        <div class="max-w-4xl mx-auto text-center">
+
+            <div
+                class="inline-flex items-center gap-2 px-3 py-1.5 mb-6 rounded-full border border-green-500/20 bg-green-500/5 text-green-400 text-xs font-semibold tracking-wide">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                </span>
+                متاح للفرص البرمجية | Open to Work
+            </div>
+
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-white tracking-tight">
+                أمجد صادق <br>
+                <span class="gradient-text">Software Developer</span>
+            </h1>
+
+            <p class="text-gray-400 text-base md:text-lg mb-10 leading-relaxed max-w-2xl mx-auto">
+                متخصص في بناء الحلول الرقمية المتكاملة، أركز على تحويل الأفكار المعقدة إلى تطبيقات بسيطة وفعالة.
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#projects"
+                    class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl font-bold text-base shadow-lg shadow-blue-600/20 transition-all transform hover:-translate-y-0.5">
+                    تصفح أعمالي
+                </a>
+
+                <a href="https://github.com/YourGitHub" target="_blank"
+                    class="glass hover:bg-white/10 px-8 py-3 rounded-xl font-bold text-base transition-all border border-white/10 flex items-center gap-2 transform hover:-translate-y-0.5">
+                    <i class="fab fa-github text-lg"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="card-hover glass rounded-3xl p-8 relative overflow-hidden group">
+                <div class="absolute -right-4 -top-4 text-8xl text-white/5 group-hover:text-blue-500/10 transition-colors italic font-bold">C++</div>
+                <div class="flex items-center gap-4 mb-6">
+                    <i class="fas fa-brain text-4xl text-blue-500"></i>
+                    <h3 class="text-2xl font-bold text-white">C++ & Logic</h3>
+                </div>
+                <ul class="project-list text-blue-400 font-medium">
+                    <li><a href="ضع_الرابط_هنا" target="_blank"><i class="fas fa-terminal"></i> اسم المشروع هنا</a></li>
+                </ul>
+            </div>
+
+            <div class="card-hover glass rounded-3xl p-8 relative overflow-hidden group">
+                <div class="absolute -right-4 -top-4 text-8xl text-white/5 group-hover:text-red-500/10 transition-colors italic font-bold">C#</div>
+                <div class="flex items-center gap-4 mb-6">
+                    <i class="fas fa-desktop text-4xl text-red-500"></i>
+                    <h3 class="text-2xl font-bold text-white">Desktop (C#)</h3>
+                </div>
+                <div>
+                    <span class="badge badge-fullstack mb-2 inline-block">Full Stack Projects</span>
+                    <ul class="project-list text-red-400 font-bold">
+                        <li><a href="ضع_الرابط_هنا" target="_blank"><i class="fas fa-boxes"></i> اسم المشروع هنا</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card-hover glass rounded-3xl p-8 relative overflow-hidden group">
+                <div class="absolute -right-4 -top-4 text-8xl text-white/5 group-hover:text-cyan-500/10 transition-colors italic font-bold">APP</div>
+                <div class="flex items-center gap-4 mb-6">
+                    <i class="fas fa-mobile-alt text-4xl text-cyan-400"></i>
+                    <h3 class="text-2xl font-bold text-white">Flutter Dev</h3>
+                </div>
+                <ul class="project-list text-cyan-400 font-medium">
+                    <li><a href="ضع_الرابط_هنا" target="_blank"><i class="fas fa-weight"></i> اسم المشروع هنا</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="tech" class="py-20 px-6 max-w-5xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-10 italic">🛠 Technologies & Skills</h2>
+        <div class="flex flex-wrap justify-center gap-4 text-sm font-bold">
+            <span class="bg-white/5 border border-white/10 px-6 py-2 rounded-full">C++</span>
+            <span class="bg-white/5 border border-white/10 px-6 py-2 rounded-full">Flutter / Dart</span>
+            <span class="bg-white/5 border border-white/10 px-6 py-2 rounded-full">C# Windows Forms</span>
+            <span class="bg-white/5 border border-white/10 px-6 py-2 rounded-full">PHP / MySQL</span>
+        </div>
+    </section>
+
+    <footer class="py-20 px-6 text-center border-t border-white/5">
+        <div class="max-w-2xl mx-auto glass p-10 rounded-3xl">
+            <h2 class="text-2xl font-bold mb-6 italic">🎯 الهدف</h2>
+            <p class="text-gray-400 mb-8 leading-relaxed">بناء سجل احترافي يعكس الخبرة في مختلف التقنيات.</p>
+            <p class="mt-10 text-xs text-gray-600 uppercase tracking-widest">أمجد صادق | 2026</p>
+        </div>
+    </footer>
+
+</body>
+</html>
