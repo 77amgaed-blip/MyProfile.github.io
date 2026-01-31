@@ -42,22 +42,22 @@
         }
 
         .project-list li {
-            margin-bottom: 8px;
-            font-size: 0.85rem;
+            margin-bottom: 12px;
+            font-size: 0.9rem;
             border-bottom: 1px solid rgba(255, 255, 255, 0.03);
-            padding-bottom: 4px;
+            padding-bottom: 6px;
         }
 
         .project-list a {
             transition: 0.3s;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
         }
 
         .project-list a:hover {
             padding-right: 8px;
-            color: white;
+            color: #60a5fa;
         }
 
         .badge {
@@ -68,17 +68,8 @@
             text-transform: uppercase;
         }
 
-        .badge-frontend {
-            background: rgba(45, 212, 191, 0.1);
-            color: #2dd4bf;
-            border: 1px solid rgba(45, 212, 191, 0.2);
-        }
-
-        .badge-fullstack {
-            background: rgba(96, 165, 250, 0.1);
-            color: #60a5fa;
-            border: 1px solid rgba(96, 165, 250, 0.2);
-        }
+        .badge-web { background: rgba(45, 212, 191, 0.1); color: #2dd4bf; border: 1px solid rgba(45, 212, 191, 0.2); }
+        .badge-python { background: rgba(234, 179, 8, 0.1); color: #eab308; border: 1px solid rgba(234, 179, 8, 0.2); }
     </style>
 </head>
 
@@ -89,93 +80,82 @@
             <div class="text-2xl font-extrabold gradient-text tracking-tighter italic underline decoration-blue-500">
                 AMJAD.DEV
             </div>
-
             <div class="hidden md:flex gap-8 text-sm font-bold">
                 <a href="#home" class="hover:text-blue-400 transition">الرئيسية</a>
                 <a href="#projects" class="hover:text-blue-400 transition">المشاريع</a>
                 <a href="#tech" class="hover:text-blue-400 transition">التقنيات</a>
-                <a href="#work" class="hover:text-blue-400 transition">العمل</a>
             </div>
-
-            <button id="menu-btn" class="md:hidden text-white focus:outline-none">
-                <i class="fas fa-bars text-2xl"></i>
-            </button>
         </div>
     </nav>
 
-    <section id="home"
-        class="pt-32 pb-16 px-6 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-blue-900/10 via-transparent to-transparent">
+    <section id="home" class="pt-32 pb-16 px-6">
         <div class="max-w-4xl mx-auto text-center">
-
-            <div
-                class="inline-flex items-center gap-2 px-3 py-1.5 mb-6 rounded-full border border-green-500/20 bg-green-500/5 text-green-400 text-xs font-semibold tracking-wide">
-                <span class="relative flex h-2 w-2">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-                </span>
-                متاح للفرص البرمجية | Open to Work
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 mb-6 rounded-full border border-green-500/20 bg-green-500/5 text-green-400 text-xs font-semibold">
+                <span class="relative flex h-2 w-2"><span class="animate-ping absolute h-full w-full rounded-full bg-green-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span></span>
+                متاح للعمل | Open to Projects
             </div>
-
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-white tracking-tight">
-                أمجد صادق <br>
-                <span class="gradient-text">Software Developer</span>
-            </h1>
-
-            <p class="text-gray-400 text-base md:text-lg mb-10 leading-relaxed max-w-2xl mx-auto">
-                متخصص في بناء الحلول الرقمية المتكاملة، أركز على تحويل الأفكار المعقدة إلى تطبيقات بسيطة وفعالة.
-            </p>
-
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="#projects"
-                    class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl font-bold text-base shadow-lg shadow-blue-600/20 transition-all transform hover:-translate-y-0.5">
-                    تصفح أعمالي
-                </a>
-
-                <a href="https://github.com/77amgaed-blip" target="_blank"
-                    class="glass hover:bg-white/10 px-8 py-3 rounded-xl font-bold text-base transition-all border border-white/10 flex items-center gap-2 transform hover:-translate-y-0.5">
-                    <i class="fab fa-github text-lg"></i> GitHub
-                </a>
-            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 text-white">أمجد صادق <br><span class="gradient-text">Software Developer</span></h1>
         </div>
     </section>
 
-    <section id="projects" class="py-24 px-6 max-w-7xl mx-auto">
+    <section id="projects" class="py-12 px-6 max-w-7xl mx-auto">
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
             <div class="card-hover glass rounded-3xl p-8 relative overflow-hidden group">
-                <div class="absolute -right-4 -top-4 text-8xl text-white/5 group-hover:text-blue-500/10 transition-colors italic font-bold">C++</div>
+                <div class="absolute -right-4 -top-4 text-8xl text-white/5 italic font-bold">APP</div>
                 <div class="flex items-center gap-4 mb-6">
-                    <i class="fas fa-brain text-4xl text-blue-500"></i>
-                    <h3 class="text-2xl font-bold text-white">C++ & Logic</h3>
+                    <i class="fas fa-mobile-alt text-4xl text-cyan-400"></i>
+                    <h3 class="text-2xl font-bold text-white">تطبيقات الموبايل</h3>
                 </div>
-                <ul class="project-list text-blue-400 font-medium">
-                    <li><a href="ضع_الرابط_هنا" target="_blank"><i class="fas fa-terminal"></i> اسم المشروع هنا</a></li>
+                <ul class="project-list text-cyan-400">
+                    <li><a href="https://github.com/77amgaed-blip/project_mangment_customer" target="_blank"><i class="fas fa-wallet"></i> دفتر الديون الذكي (Flutter)</a></li>
                 </ul>
             </div>
 
             <div class="card-hover glass rounded-3xl p-8 relative overflow-hidden group">
-                <div class="absolute -right-4 -top-4 text-8xl text-white/5 group-hover:text-red-500/10 transition-colors italic font-bold">C#</div>
+                <div class="absolute -right-4 -top-4 text-8xl text-white/5 italic font-bold">WEB</div>
+                <div class="flex items-center gap-4 mb-6">
+                    <i class="fas fa-globe text-4xl text-emerald-400"></i>
+                    <h3 class="text-2xl font-bold text-white">تطوير المواقع</h3>
+                </div>
+                <span class="badge badge-web mb-4 inline-block">Frontend & UI</span>
+                <ul class="project-list text-emerald-400">
+                    <li><a href="https://github.com/77amgaed-blip/RealEstate_Wesite" target="_blank"><i class="fas fa-home"></i> موقع العقارات الحديث</a></li>
+                </ul>
+            </div>
+
+            <div class="card-hover glass rounded-3xl p-8 relative overflow-hidden group">
+                <div class="absolute -right-4 -top-4 text-8xl text-white/5 italic font-bold">PY</div>
+                <div class="flex items-center gap-4 mb-6">
+                    <i class="fab fa-python text-4xl text-yellow-500"></i>
+                    <h3 class="text-2xl font-bold text-white">Python Scripts</h3>
+                </div>
+                <span class="badge badge-python mb-4 inline-block">Automation & Logic</span>
+                <ul class="project-list text-yellow-500">
+                    <li><a href="#" target="_blank"><i class="fas fa-robot"></i> مشروع أتمتة ذكي</a></li>
+                    <li><a href="#" target="_blank"><i class="fas fa-database"></i> تحليل بيانات بالبايثون</a></li>
+                </ul>
+            </div>
+
+            <div class="card-hover glass rounded-3xl p-8 relative overflow-hidden group">
+                <div class="absolute -right-4 -top-4 text-8xl text-white/5 italic font-bold">C#</div>
                 <div class="flex items-center gap-4 mb-6">
                     <i class="fas fa-desktop text-4xl text-red-500"></i>
                     <h3 class="text-2xl font-bold text-white">Desktop (C#)</h3>
                 </div>
-                <div>
-                    <span class="badge badge-fullstack mb-2 inline-block">Full Stack Projects</span>
-                    <ul class="project-list text-red-400 font-bold">
-                        <li><a href="ضع_الرابط_هنا" target="_blank"><i class="fas fa-boxes"></i> اسم المشروع هنا</a></li>
-                    </ul>
-                </div>
+                <ul class="project-list text-red-400 font-bold">
+                    <li><a href="#" target="_blank"><i class="fas fa-boxes"></i> نظام إدارة مخازن</a></li>
+                </ul>
             </div>
 
             <div class="card-hover glass rounded-3xl p-8 relative overflow-hidden group">
-                <div class="absolute -right-4 -top-4 text-8xl text-white/5 group-hover:text-cyan-500/10 transition-colors italic font-bold">APP</div>
+                <div class="absolute -right-4 -top-4 text-8xl text-white/5 italic font-bold">C++</div>
                 <div class="flex items-center gap-4 mb-6">
-                    <i class="fas fa-mobile-alt text-4xl text-cyan-400"></i>
-                    <h3 class="text-2xl font-bold text-white">Flutter Dev</h3>
+                    <i class="fas fa-brain text-4xl text-blue-500"></i>
+                    <h3 class="text-2xl font-bold text-white">C++ & Logic</h3>
                 </div>
-                <ul class="project-list text-cyan-400 font-medium">
-                    <li><a href="https://github.com/77amgaed-blip/project_mangment_customer" target="_blank">
-                        <i class="fas fa-weight"></i> Debt Management and Collection</a></li>
+                <ul class="project-list text-blue-400">
+                    <li><a href="#" target="_blank"><i class="fas fa-code"></i> خوارزميات وهياكل بيانات</a></li>
                 </ul>
             </div>
 
@@ -185,19 +165,16 @@
     <section id="tech" class="py-20 px-6 max-w-5xl mx-auto text-center">
         <h2 class="text-3xl font-bold mb-10 italic">🛠 Technologies & Skills</h2>
         <div class="flex flex-wrap justify-center gap-4 text-sm font-bold">
-            <span class="bg-white/5 border border-white/10 px-6 py-2 rounded-full">C++</span>
+            <span class="bg-white/5 border border-white/10 px-6 py-2 rounded-full">Python</span>
             <span class="bg-white/5 border border-white/10 px-6 py-2 rounded-full">Flutter / Dart</span>
-            <span class="bg-white/5 border border-white/10 px-6 py-2 rounded-full">C# Windows Forms</span>
-            <span class="bg-white/5 border border-white/10 px-6 py-2 rounded-full">PHP / MySQL</span>
+            <span class="bg-white/5 border border-white/10 px-6 py-2 rounded-full">HTML5 / Tailwind CSS</span>
+            <span class="bg-white/5 border border-white/10 px-6 py-2 rounded-full">C# / C++</span>
         </div>
     </section>
 
-    <footer class="py-20 px-6 text-center border-t border-white/5">
-        <div class="max-w-2xl mx-auto glass p-10 rounded-3xl">
-            <h2 class="text-2xl font-bold mb-6 italic">🎯 الهدف</h2>
-            <p class="text-gray-400 mb-8 leading-relaxed">بناء سجل احترافي يعكس الخبرة في مختلف التقنيات.</p>
-            <p class="mt-10 text-xs text-gray-600 uppercase tracking-widest">أمجد صادق | 2026</p>
-        </div>
+    <footer class="py-10 px-6 text-center border-t border-white/5">
+        <p class="text-gray-400 mb-4">للتواصل عبر واتساب: 967778480008</p>
+        <p class="text-xs text-gray-600">أمجد صادق | 2026</p>
     </footer>
 
 </body>
